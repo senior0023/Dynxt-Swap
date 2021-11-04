@@ -1,0 +1,31 @@
+{
+  "name": "dynastyx",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.13.6",
+    "@nuxtjs/markdownit": "^2.0.0",
+    "@walletconnect/web3-provider": "^1.4.1",
+    "big-number": "^2.0.0",
+    "core-js": "^3.15.1",
+    "epic-spinners": "^1.1.0",
+    "eth-sig-util": "^3.0.1",
+    "jquery": "^3.6.0",
+    "moralis": "0.0.42",
+    "nuxt": "^2.15.7",
+    "query-string": "^7.0.1",
+    "vuetify": "^2.5.5",
+    "web3": "^1.4.0"
+  },
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "@nuxtjs/google-analytics": "^2.4.0",
+    "@nuxtjs/vuetify": "^1.12.1"
+  }
+}

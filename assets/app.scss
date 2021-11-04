@@ -1,0 +1,230 @@
+@import '~vuetify/src/styles/settings/_variables';
+
+$small: 320px;
+$medium: 900px;
+
+html {
+  scroll-behavior: smooth;
+}
+
+.pl-md-70 {
+  padding: 0 0 0 70px !important;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+  color: #FFC473 !important;
+  -webkit-text-fill-color: #FFC473 !important;
+  // font-family: sitka banner;
+  font-size: large;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+  color: #FFC473 !important;
+  // font-family: sitka banner;
+  font-size: large;
+}
+
+@media #{map-get($display-breakpoints, 'sm-and-down')} {
+  .pl-md-70 {
+    padding-left: 0 !important;
+  }
+  .text-center-sm {
+    text-align: center;
+  }
+  .h-carousel {
+    height: 30vh;
+    justify-content: flex-start;
+  }
+  .d-box {
+    max-height: 45vh;
+    overflow-y: auto;
+    padding-bottom: 10px;
+  }
+  .step-box {
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.hero-carousel {
+  position: relative;
+
+
+  .bg-image .v-responsive__sizer {
+    background-image: url("../assets/images/BG-1.jpg");
+    background-size: cover;
+    z-index: -1;
+    // position: absolute;
+    // top: 0;
+    // right: 0;
+    // bottom: 0;
+    // left: 0;
+    // opacity: 0.15;
+  }
+
+}
+
+
+.bg-image .v-responsive__content {
+  background-image: url("../assets/images/BG-1.jpg");
+  background-size: cover;
+  z-index: -1;
+}
+
+.relative {
+  position: relative;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.step-box {
+
+
+  .v-stepper__step--inactive {
+    .v-stepper__step__step {
+      color: transparent !important;
+    }
+  }
+
+
+  @media #{map-get($display-breakpoints, 'md-and-up')} {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    .step-box-item {
+      height: 100%;
+      display: grid;
+    }
+
+    .v-stepper__step__step {
+      width: 12px;
+      height: 12px;
+      min-width: 12px;
+    }
+    .v-stepper__step {
+      padding: 0 30px 0 !important;
+    }
+    .v-stepper__content {
+      margin: -5vh -36px -5vh 36px !important;
+      border-left: 1px solid gray !important;
+
+      &.complete {
+        border-left: 1px solid var(--v-cream-base) !important;
+      }
+    }
+  }
+
+  @media #{map-get($display-breakpoints, 'sm-and-down')} {
+    position: relative;
+    .step-box-item {
+      display: flex;
+      align-items: flex-end;
+    }
+    .v-stepper__step {
+      flex-direction: column-reverse;
+      padding: 0;
+    }
+    .v-stepper__label {
+      display: block !important;
+      padding-bottom: 10px;
+    }
+    .v-stepper__step__step {
+      width: 12px;
+      height: 12px;
+      min-width: 12px;
+    }
+    .v-divider {
+      border-color: gray !important;
+      padding-bottom: 5px;
+      margin: 0 -8px;
+
+      &.complete {
+        border-color: var(--v-cream-base) !important;
+      }
+    }
+  }
+}
+
+.cream-first::first-letter {
+  color: var(--v-cream-base) !important
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.cream-br-2 {
+  border: 2px solid var(--v-cream-base) !important;
+}
+
+.cream-bx-2 {
+  // box-shadow: 0 0 16px var(--v-cream-base) !important;
+  border: 2px solid  var(--v-cream-base) !important;
+  width: 480px;
+  @media screen and (max-width: $medium) {
+    width: 350px;
+  }
+  @media screen and (max-width: $small) {
+    width: 300px;
+  }
+}
+
+.active .nav-img {
+  filter: brightness(1.5) sepia(1) hue-rotate(295deg) saturate(25);
+}
+
+.cream-hr {
+  border-color: var(--v-cream-base) !important;
+}
+
+.vault-icon {
+  border: 1px solid var(--v-cream-base);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-style: normal;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 50px;
+}
+
+.card-title{
+  font-weight: 600 !important;
+}
+
+.sub-title{
+  font-size: x-small;
+}
+
+.radio-none {
+  .v-input--selection-controls__input {
+    display: none !important;
+  }
+}
+.v-application {
+  color: #FFC473 !important
+}
+
+.append-input .v-input__append-inner {
+  margin-top: 8px !important;
+}
+.vault:nth-child(even){
+  .suffle-row{
+    flex-direction: row-reverse;
+  }
+
+}
+.break-word{
+  word-break: break-word!important;
+}
